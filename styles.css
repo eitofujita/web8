@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.popup {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* フォーム全体の最大幅 */
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 14px; /* ラベルの文字サイズ */
+}
+
+input, textarea {
+    width: 100%; /* フィールドをフォーム幅いっぱいに広げる */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none; /* テキストエリアのサイズ変更を無効化 */
+    height: 100px; /* テキストエリアの固定高さ */
+}
+
+.btn {
+    display: inline-block;
+    width: 48%; /* ボタンの幅を調整 */
+    padding: 10px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px 1%;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+#notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
